@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Welverdiend7.Pages.Checklist"
+             Title="Checklist">
+    <Grid>
+
+        <Image Source="bg.svg" Aspect="AspectFill" />
+        <StackLayout HeightRequest="50" VerticalOptions="Start" BackgroundColor="Black">
+            <Grid>
+                <Label Margin="0,10,0,0" TextColor="White" Text="Home" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Image Source="checklist.png" HorizontalOptions="End"/>
+            </Grid>
+        </StackLayout>
+
+
+        <Frame HeightRequest="80" Margin="20" Opacity="0.8">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Angle Grinder" TextColor="Black" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="20"/>
+                <Image Source="checklist.png" Grid.Column="1" HorizontalOptions="End"/>
+            </Grid>
+        </Frame>
+
+        <StackLayout HeightRequest="50" VerticalOptions="End" BackgroundColor="Black">
+            <Button Text="View completed Checklist" Margin="20,5,20,0"/>
+        </StackLayout>
+
+        <ListView></ListView>
+    </Grid>
+</ContentPage>

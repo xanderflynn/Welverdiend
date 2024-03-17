@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Welverdiend7.Pages.SubmitPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             Title="SubmitPage"
+             BackgroundImageSource="bg.svg">
+    <StackLayout>
+
+        <!--<Image Source="bg.svg" Aspect="AspectFill" />-->
+
+        <Entry x:Name="txtEmployeenumber" Margin="20,10,20,20" toolkit:DockLayout.DockPosition="Top"  PlaceholderColor="Black" BackgroundColor="White" Placeholder="Employee number"/>
+
+        <StackLayout>
+            <mct:DrawingView
+            BackgroundColor="White"
+            toolkit:DockLayout.DockPosition="Top"
+            
+            x:Name="SignatureView"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            HeightRequest="600"
+            IsMultiLineModeEnabled="True"
+            Margin="20,0,20,0"/>
+        </StackLayout>
+
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+            <HorizontalStackLayout IsVisible="true" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+
+                <Button x:Name="btnSubmit" Margin="10" HorizontalOptions="FillAndExpand" WidthRequest="150" VerticalOptions="CenterAndExpand" Clicked="btnSubmit_Clicked" Text="Submit"/>
+                <Button x:Name="btnadd" Margin="10" HorizontalOptions="FillAndExpand" WidthRequest="150" Clicked="btnadd_Clicked" Text="Add"/>
+
+            </HorizontalStackLayout>
+        </StackLayout>
+    </StackLayout>
+
+    <!--<Grid>
+
+        -->
+    <!--<Image Source="bg.svg" Aspect="AspectFill" />
+
+        <mct:DrawingView
+            x:Name="SignatureView"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="White"
+            IsMultiLineModeEnabled="True"/>
+
+        <Button x:Name="btnSubmit" VerticalOptions="EndAndExpand" Clicked="btnSubmit_Clicked" Text="Submit"/>
+
+    </Grid>-->
+</ContentPage>

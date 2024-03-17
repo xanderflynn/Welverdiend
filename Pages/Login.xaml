@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Welverdiend7.Pages.Login"
+             xmlns:cv="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+             Title="Login"
+             BackgroundImageSource="bg.svg">
+
+
+    <StackLayout>
+
+
+        <VerticalStackLayout VerticalOptions="StartAndExpand">
+            <Image HeightRequest="200" Margin="0,20,0,0" Source="Logo.PNG"></Image>
+            <Label Text="Welverdiend Forestry (Pty) Ltd." TextColor="White" HorizontalOptions="CenterAndExpand"/>
+        </VerticalStackLayout>
+
+
+
+
+        <VerticalStackLayout  Padding="30" VerticalOptions="StartAndExpand">
+
+            <Label FontAttributes="Bold" Margin="0,20,0,10" Text="Username" TextColor="White"/>
+            <Frame HeightRequest="50" BorderColor="White"
+       HasShadow="False"
+       CornerRadius="12">
+                <Entry x:Name="txtUsername" TextColor="White" Margin="-16,-16,-20,-20" BackgroundColor="Transparent"/>
+                <Frame.Background>
+                    <!--StartPoint defaults to (0,0)      
+             Endpoint defaults to (1,1)-->
+                    <LinearGradientBrush>
+                        <GradientStop Color="#777B7D"
+                          Offset="0.1" />
+                        <GradientStop Color="#23292D"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+
+            <Label Margin="0,20,0,10" Text="Password" TextColor="White"/>
+            <Frame HeightRequest="50" BorderColor="White"
+       HasShadow="False"
+       CornerRadius="12">
+
+                <Entry x:Name="txtPassword" IsPassword="True" TextColor="White" Margin="-16,-16,-20,-20" BackgroundColor="Transparent"/>
+
+                <!--<Entry x:Name="txtPassword" TextColor="White" Margin="-16,-16,-20,-20" BackgroundColor="Transparent"/>-->
+
+                <Frame.Background>
+                    <!--StartPoint defaults to (0,0)      
+             Endpoint defaults to (1,1)-->
+                    <LinearGradientBrush>
+                        <GradientStop Color="#777B7D"
+                          Offset="0.1" />
+                        <GradientStop Color="#23292D"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+        </VerticalStackLayout>
+
+
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label x:Name="barcodeResult" IsVisible="False" FontSize="20"/>
+            <cv:CameraView IsVisible="False" x:Name="cameraView" WidthRequest="300" HeightRequest="200" CamerasLoaded="cameraView_CamerasLoaded" BarCodeDetectionEnabled="True"
+                           BarcodeDetected="cameraView_BarcodeDetected"/>
+
+            <!--<HorizontalStackLayout HorizontalOptions="FillAndExpand">
+
+
+                <Button Clicked="Button_Clicked" Margin="30,0,50,0"
+                        CornerRadius="20" FontAttributes="Bold" FontSize="15" 
+                        BackgroundColor="#3DAD48" HeightRequest="100" WidthRequest="150" Text="Login" HorizontalOptions="StartAndExpand"/>
+
+
+                <Button CornerRadius="20" Text="Scan" 
+                        FontAttributes="Bold" FontSize="15"  
+                        BackgroundColor="#3DAD48" WidthRequest="150" HeightRequest="100" HorizontalOptions="EndAndExpand" Padding="0,0,0,0" Clicked="Button_Clicked_1"/>
+            </HorizontalStackLayout>-->
+
+            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                <HorizontalStackLayout IsVisible="true" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+
+                    <Button x:Name="btnSubmit" Margin="10" BackgroundColor="#3DAD48" HorizontalOptions="FillAndExpand" WidthRequest="150" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked" Text="Login"/>
+                    <Button x:Name="btnadd" BackgroundColor="#3DAD48" Margin="10" HorizontalOptions="FillAndExpand" WidthRequest="150" Clicked="Button_Clicked_1" Text="Scan"/>
+
+                </HorizontalStackLayout>
+            </StackLayout>
+
+            <Label Grid.Row="1" HorizontalOptions="Center" FontSize="Small" Text="By continuing, you agree to the terms and conditions." VerticalOptions="Start" TextColor="White"/>
+
+            <!--<Grid VerticalOptions="FillAndExpand" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Margin="20,0,20,0">
+
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Grid VerticalOptions="FillAndExpand" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Margin="20,0,20,0">
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Clicked="Button_Clicked" 
+
+                        CornerRadius="20" FontAttributes="Bold" FontSize="15" BackgroundColor="#3DAD48" HeightRequest="100" WidthRequest="150" Text="Login" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+
+
+                <Button Grid.Row="0" CornerRadius="20" Text="Request" 
+                        FontAttributes="Bold" FontSize="15"  BackgroundColor="#3DAD48" WidthRequest="150" HeightRequest="100" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand"/>
+
+                <Label Grid.Row="1" HorizontalOptions="Center" FontSize="Small" Text="By continuing, you agree to the terms and conditions." VerticalOptions="Start" TextColor="White"/>
+            </Grid>-->
+
+            <!--<Button Grid.Row="0" CornerRadius="20" FontAttributes="Bold" FontSize="15" BackgroundColor="#3DAD48" HeightRequest="150" WidthRequest="150" Text="Login" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+
+
+            <Button Grid.Row="0" CornerRadius="20" Text="Request" 
+                        FontAttributes="Bold" FontSize="15"  BackgroundColor="#3DAD48" WidthRequest="150" HeightRequest="150" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand"/>
+
+            <Label Grid.Row="1" HorizontalOptions="Center" FontSize="Small" Text="By continuing, you agree to the terms and conditions." VerticalOptions="Start" TextColor="White"/>-->
+
+
+        </StackLayout>
+
+        <!--<StackLayout BackgroundColor="Yellow" VerticalOptions="CenterAndExpand">
+            <Label Text="asuiojdnasiujndia"/>
+            <CheckBox></CheckBox>
+            <Switch IsToggled="True"></Switch>
+        </StackLayout>-->
+
+
+    </StackLayout>
+
+
+</ContentPage>

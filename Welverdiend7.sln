@@ -5,6 +5,14 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Welverdiend7", "Welverdiend7.csproj", "{368C20DA-4881-46AA-828D-DC947818BD9D}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Wel.Data", "Wel.Data\Wel.Data.shproj", "{7949CB05-FC35-4460-AB73-5B50D1ED9D76}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Wel.Services", "Wel.Services\Wel.Services.shproj", "{6BD7DB38-B5D3-420F-BE28-70D0AE78B9A6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Wel.Sharedlibrary", "Wel.Sharedlibrary\Wel.Sharedlibrary.shproj", "{4CCBBA59-B1DC-48C0-9DCC-D7E991681DF7}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Wel.Utils", "Wel.Utils\Wel.Utils.shproj", "{94ABA0AB-E71A-49AA-8A7C-EF0321891A72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,9 +33,13 @@ Global
 		SolutionGuid = {9A57F67E-857F-498B-9F09-12E130D0A4F8}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\WelverdiendUpdate2024\Wel.Data\Wel.Data.projitems*{368c20da-4881-46aa-828d-dc947818bd9d}*SharedItemsImports = 5
-		..\WelverdiendUpdate2024\Wel.Services\Wel.Services.projitems*{368c20da-4881-46aa-828d-dc947818bd9d}*SharedItemsImports = 5
-		..\WelverdiendUpdate2024\Wel.Sharedlibrary\Wel.Sharedlibrary.projitems*{368c20da-4881-46aa-828d-dc947818bd9d}*SharedItemsImports = 5
-		..\WelverdiendUpdate2024\Wel.Utils\Wel.Utils.projitems*{368c20da-4881-46aa-828d-dc947818bd9d}*SharedItemsImports = 5
+		Wel.Data\Wel.Data.projitems*{368c20da-4881-46aa-828d-dc947818bd9d}*SharedItemsImports = 5
+		Wel.Services\Wel.Services.projitems*{368c20da-4881-46aa-828d-dc947818bd9d}*SharedItemsImports = 5
+		Wel.Sharedlibrary\Wel.Sharedlibrary.projitems*{368c20da-4881-46aa-828d-dc947818bd9d}*SharedItemsImports = 5
+		Wel.Utils\Wel.Utils.projitems*{368c20da-4881-46aa-828d-dc947818bd9d}*SharedItemsImports = 5
+		Wel.Sharedlibrary\Wel.Sharedlibrary.projitems*{4ccbba59-b1dc-48c0-9dcc-d7e991681df7}*SharedItemsImports = 13
+		Wel.Services\Wel.Services.projitems*{6bd7db38-b5d3-420f-be28-70d0ae78b9a6}*SharedItemsImports = 13
+		Wel.Data\Wel.Data.projitems*{7949cb05-fc35-4460-ab73-5b50d1ed9d76}*SharedItemsImports = 13
+		Wel.Utils\Wel.Utils.projitems*{94aba0ab-e71a-49aa-8a7c-ef0321891a72}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

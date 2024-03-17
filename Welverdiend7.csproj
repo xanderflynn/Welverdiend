@@ -105,12 +105,14 @@
 	  </MauiXaml>
 	</ItemGroup>
 
-	<Import Project="..\WelverdiendUpdate2024\Wel.Data\Wel.Data.projitems" Label="Shared" />
 
-	<Import Project="..\WelverdiendUpdate2024\Wel.Services\Wel.Services.projitems" Label="Shared" />
 
-	<Import Project="..\WelverdiendUpdate2024\Wel.Sharedlibrary\Wel.Sharedlibrary.projitems" Label="Shared" />
+	<Import Project="Wel.Data\Wel.Data.projitems" Label="Shared" />
 
-	<Import Project="..\WelverdiendUpdate2024\Wel.Utils\Wel.Utils.projitems" Label="Shared" />
+	<Import Project="Wel.Services\Wel.Services.projitems" Label="Shared" />
+
+	<Import Project="Wel.Sharedlibrary\Wel.Sharedlibrary.projitems" Label="Shared" />
+
+	<Import Project="Wel.Utils\Wel.Utils.projitems" Label="Shared" />
 
 </Project>

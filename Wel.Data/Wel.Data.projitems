@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7949cb05-fc35-4460-ab73-5b50d1ed9d76</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Wel.Data</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AddQuestionsUpload.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactNumbers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DynamicData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DynamicDataUploadTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SendData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)senduser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TblCompleted.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TblIntermediate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)tblSignatures.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestAuth.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)User.cs" />
+  </ItemGroup>
+</Project>

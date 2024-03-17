@@ -1,0 +1,35 @@
+﻿using SQLite;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Wel.Data
+{
+    [Table("DynamicData")]
+    public class DynamicDataUploadTable
+    {
+        [PrimaryKey, AutoIncrement]
+        [Column("Pk_Id")]
+        public int Pk_Id { get; set; }
+        [Column("Id")]
+        public int Id { get; set; }
+        [Column("ColumnName")]
+        public string ColumnName { get; set; }
+        [Column("ColumnValue")]
+        public string ColumnValue { get; set; }
+        [Column("Error")]
+        public string Error { get; set; }
+        [Column("TableName")]
+        public string TableName { get; set; }
+        [Column("UserId")]
+        public int UserId { get; set; }
+        [Column("Value")]
+        public string Value { get; set; }
+        [Column("Version")]
+        public string Version { get; set; }
+        [Column("Completed")]
+        public int Completed { get; set; }
+        [Column("recordId")]
+        public int recordId { get; set; }
+    }
+}
